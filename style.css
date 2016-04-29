@@ -1,0 +1,365 @@
+* {
+	font: inherit;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+html {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-font-feature-settings: kern 1;
+	-moz-font-feature-settings: kern=1;
+	-ms-font-feature-settings: kern 1;
+	-o-font-feature-settings: kern 1;
+	font-feature-settings: kern 1;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	font-weight: 300; 
+	font-size: 16px;
+	line-height: 26px; 
+	font-family: Roboto, Arial, sans-serif;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+section {
+	padding-bottom: 8%;
+	position: relative;
+}
+
+section:before {
+	content: "";
+	width: 100%;
+	height: 0;
+	padding-bottom: 8%;
+	margin-top: -4%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+.content {
+	padding: 8%;
+	position: relative;
+}
+
+.results-heading {
+	font-weight: 900;
+	font-size: 25px;
+	line-height: 35px;
+	text-transform: uppercase;
+	text-align: center;
+    font-family: Lato;
+}
+
+.results-text {
+	text-align: center;
+	margin-bottom: 4%;
+    font-weight: 400;
+}
+
+header {
+	color: #fff;
+	background: #000 fixed;
+    background-image: url("imgs/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+	overflow: hidden;
+	position: relative;
+	height: auto;
+	padding: 8% 0%;
+	text-align: center;
+	overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.nav {
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 10;
+}
+
+.logo {
+	width: 45px;
+	height: 45px;
+	padding: 18px;
+	display: inline-block;
+	position: relative;
+	top: 0;
+	left: 0;
+	float: left;
+	z-index: 10;
+}
+
+.browse {
+	width: 100px;
+	padding: 18px;
+	display: inline-block;
+	position: relative;
+	top: 0;
+	right: 0;
+	float: right;
+	z-index: 10;
+}
+
+#browse-button {
+	background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-family: FontAwesome, Lato, sans-serif;
+    font-weight: 700;
+    height: 45px;
+    padding: 5px 15px;
+    vertical-align: bottom;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+h1.main-title {
+    font-size: 95px;
+    line-height: 105px;
+    font-weight: 900;
+    margin-bottom: 70px;
+    font-family: Lato;
+}
+
+#search-text {
+	width: 40%;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    height: 25px;
+    font-size: 16px;
+    padding: 10px 15px 10px 15px;
+    font-weight: 400;
+    color: #444;
+    display: inline-block;
+}
+
+#search-select {
+    background-color: #fff;
+    font-size: 16px;
+    color: #444;
+    font-weight: 400;
+    height: 45px;
+    width: 120px;
+    padding: 0 10px;
+    background: url('http://asi.sfsu.edu/wp-content/uploads/2015/12/arrow.png') no-repeat right #fff;
+    background-position: 95% center;
+    vertical-align: bottom;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    cursor: pointer;
+}
+
+#search-button {
+    background-color: #E26F28;
+    color: #fff;
+    font-size: 16px;
+    font-family: FontAwesome, Lato, sans-serif;
+    font-weight: 700;
+    height: 45px;
+    padding: 5px 15px;
+    vertical-align: bottom;
+    cursor: pointer;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #search-text, #search-select, #search-button {
+    	display: block;
+    	width: 100%;
+    	height: 45px;
+    	margin-bottom: 2px;
+    	box-sizing: border-box;
+   		-moz-box-sizing: border-box;
+    	-webkit-box-sizing: border-box;
+    }
+
+    .logo, .browse {
+    	padding: 5%;
+    }
+}
+
+/* Table */
+.cbtable {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.cbtable td {
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@media only screen and (max-width: 768px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+    .cbtable table,
+    .cbtable thead,
+    .cbtable tbody,
+    .cbtable th,
+    .cbtable td,
+    .cbtable tr {
+        display: block;
+    }
+    td {
+        border: none;
+        position: relative;
+        vertical-align: top;
+    }
+
+    header {
+        padding: 20% 0;
+    }
+}
+
+.cover {
+	max-width: 100%;
+	height: auto;
+	width: 300px;
+}
+
+.cbbox {
+	width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 0;
+    position: relative;
+}
+
+.cbissue {
+	float: left;
+    background: #000;
+    color: #fff;
+    padding: 12px 12px;
+    height: 20px;
+    width: 20px;
+    font-weight: 900;
+}
+
+.cbinfo {
+	text-align: left;
+	margin-left: 55px;
+	padding: 5px 0;
+}
+
+.cbtitle {
+	font-size: 15px;
+	line-height: 18px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-family: Lato;
+}
+
+.cbpublisher {
+	font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: Lato;
+} 
+
+#latest {
+    background: #fff;
+    height: 50%;
+}
+
+#filter {
+    color: #fff;
+    background: #000 fixed;
+    background-image: url("imgs/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    padding: 8% 0%;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.left-column {
+    width: 40%;
+}
+
+footer {
+    background: #000;
+    height: 250px;
+}
+
+@media only screen and (max-width: 1200px) {
+    h1.main-title {
+        font-size: 65px;
+        line-height: 75px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1.main-title {
+        font-size: 55px;
+        line-height: 65px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1.main-title {
+        font-size: 45px;
+        line-height: 55px;
+        margin-bottom: 30px;
+    }
+}
+
+.sub-title {
+    font-size: 45px;
+    line-height: 55px;
+    text-align: left;
+    font-weight: 700;
+}
